@@ -7,12 +7,12 @@ var MovieShowtime = React.createClass({
         <h4 className='movie-name'>
         {this.props.name}
         </h4>
-        <p className="movie-showtime">
-        {this.props.movieShowtime}
-        </p>
-        <p className="movie-url">
-        {this.props.movieUrl}
-        </p>
+        <div className="movie-url">
+          <a href={this.props.movieUrl}>Synopsis</a>
+        </div>
+        <div className="movie-showtime">
+          <a href={this.props.movieShowtime}>Showtimes</a>
+        </div>
       </div>
     );
   }
